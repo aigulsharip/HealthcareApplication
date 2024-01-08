@@ -1,0 +1,73 @@
+Endpoints and Postman Queries:
+1. PatientController:
+GET All Patients
+
+Endpoint: GET http://localhost:8080/api/patients
+Postman Query: Send a GET request to the above endpoint to retrieve all patients.
+GET Patient by ID
+
+Endpoint: GET http://localhost:8080/api/patients/{id}
+Postman Query: Replace {id} with the patient ID you want to retrieve and send a GET request.
+POST Create Patient
+
+Endpoint: POST http://localhost:8080/api/patients
+Body: JSON representation of the patient object.
+Postman Query: Set the request method to POST, provide the patient details in the request body, and send the request.
+{
+  "name": "John Doe",
+  "address": "123 Main St, City, Country"
+}
+
+DELETE Patient by ID
+Endpoint: DELETE http://localhost:8080/api/patients/{id}
+Postman Query: Replace {id} with the patient ID you want to delete and send a DELETE request.
+
+
+2. AppointmentController:
+GET All Appointments
+
+Endpoint: GET http://localhost:8080/api/appointments
+Postman Query: Send a GET request to the above endpoint to retrieve all appointments.
+GET Appointment by ID
+
+Endpoint: GET http://localhost:8080/api/appointments/{id}
+Postman Query: Replace {id} with the appointment ID you want to retrieve and send a GET request.
+POST Create Appointment
+
+Endpoint: POST http://localhost:8080/api/appointments
+Body: JSON representation of the appointment object.
+Postman Query: Set the request method to POST, provide the appointment details in the request body, and send the request.
+{
+  "dateTime": "2024-01-15T10:30:00",  // Format: YYYY-MM-DDTHH:mm:ss
+  "patient": {
+    "id": 1  // Existing patient ID
+  }
+}
+
+DELETE Appointment by ID
+Endpoint: DELETE http://localhost:8080/api/appointments/{id}
+Postman Query: Replace {id} with the appointment ID you want to delete and send a DELETE request.
+3. MedicationController:
+GET All Medications
+
+Endpoint: GET http://localhost:8080/api/medications
+Postman Query: Send a GET request to the above endpoint to retrieve all medications.
+GET Medication by ID
+
+Endpoint: GET http://localhost:8080/api/medications/{id}
+Postman Query: Replace {id} with the medication ID you want to retrieve and send a GET request.
+POST Create Medication
+Endpoint: POST http://localhost:8080/api/medications
+Body: JSON representation of the medication object.
+Postman Query: Set the request method to POST, provide the medication details in the request body, and send the request.
+{
+  "name": "Paracetamol",
+  "dosage": "500mg"
+}
+
+DELETE Medication by ID
+Endpoint: DELETE http://localhost:8080/api/medications/{id}
+Postman Query: Replace {id} with the medication ID you want to delete and send a DELETE request.
+Note:
+Ensure that your Spring Boot application is running on port 8080 or modify the URLs accordingly based on your configuration. Also, make sure to set up the appropriate request headers and bodies when necessary, especially when creating resources using POST requests.
+
