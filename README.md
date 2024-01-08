@@ -43,7 +43,7 @@ like Google Maps to provide directions to healthcare facilities.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aigulsharip/healthcare-management.git
+   git clone https://github.com/aigulsharip/HealthcareApplication.git
 
 ## Getting Started
 
